@@ -16,29 +16,65 @@ body {
   background-color: var(--primary-white-color);
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 0.32px;
+  letter-spacing: 0.02em;
+}
+
+img {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .list {
   list-style: none;
 }
 
-
 .link {
   text-decoration: none;
 }
 
-.address-header {
-  font-style: normal
+/* ================Стилі для HEADER==================== */
+
+.head-border {
+  border-bottom: 1px solid #e7e9fc;
 }
-/* Стилі для Header */
+
+.section {
+  width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row {
+  display: flex;
+}
+
 .logo {
   color: var(--primary-blue-color);
   font-family: var(--logo-font);
   font-size: 18px;
   font-weight: 800;
   line-height: 1.17;
-  letter-spacing: 0.54px;
+  padding: 24px 0;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 
@@ -46,12 +82,35 @@ body {
   color: var(--secondary-gray-color);
 }
 
+.nav-list {
+  display: flex;
+  gap: 40px;
+  margin-left: 76px;
+}
+
 .nav-link {
   color: var(--secondary-gray-color);
   font-weight: 500;
   font-size: 16px;
+  display: block;
+  padding: 24px 0;
   line-height: 1.5;
   letter-spacing: 0.02em;
+}
+
+.address-header {
+  font-style: normal;
+  margin-left: auto;
+}
+
+.contacts {
+  gap: 40px;
+  padding: 24px 0;
+}
+
+.address-link {
+  color: inherit;
+  font-style: normal;
 }
 
 .nav-link:hover,
@@ -66,52 +125,20 @@ body {
   color: var(--primary-accent-color);
 }
 
-.address-link {
-  color: inherit;
-  font-style: normal;
-}
+/* ================/Стилі для HEADER==================== */
 
-/* Стилі для Portfolio */
-.title-hidden {
-  visibility: hidden;
-}
+/* ================Стилі для HERO==================== */
 
-.filter-button {
-  background-color: var(--secondary-white-color);
-  color: var(--primary-blue-color);
-  font-weight: 500;
-  line-height: 1.5;
-  letter-spacing: 0.64px;
-  border: 1px solid #e7e9fc;
-  cursor: pointer;
-}
-
-.filter-button:hover,
-.filter-button:focus {
-  background-color: var(--primary-accent-color);
-  color: var(--primary-white-color);
-}
-
-.list-title {
-  color: var(--secondary-gray-color);
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-}
-
-.list-text {
-  color: var(--primary-gray-color);
-  font-size: 16px;
-}
-
-/* Стилі для Hero */
 .hero-section {
   background-color: var(--secondary-gray-color);
+  text-align: center;
+  padding-top: 188px;
+  padding-bottom: 188px;
+  margin-bottom: 120px;
 }
 .hero-title {
   color: var(--primary-white-color);
-  text-align: center;
+  margin-bottom: 48px;
   font-size: 56px;
   font-weight: 700;
   line-height: 1.07;
@@ -122,40 +149,80 @@ body {
   color: var(--primary-white-color);
   background-color: var(--primary-blue-color);
   font-weight: 500;
+  padding: 16px 32px;
   line-height: 1.5;
   letter-spacing: 0.64px;
   cursor: pointer;
+  border-radius: 4px;
+  border: none;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 .hero-button:hover,
 .hero-button:focus {
   background-color: var(--primary-accent-color);
 }
 
-/* Стилі для What are we doing */
+/* ================/Стилі для HERO==================== */
+
+/* ================Стилі для ADVANTAGES==================== */
+.title-hidden {
+  visibility: hidden;
+}
+
+.list-wrap {
+  display: flex;
+  gap: 24px;
+}
+.wrap {
+  padding-bottom: 120px;
+}
+
+/* ================/Стилі для ADVANTAGES==================== */
+
+/* ================Стилі для WHAT ARE YOU DOING==================== */
 .title-block {
   color: var(--secondary-gray-color);
   font-size: 36px;
   font-weight: 700;
   text-align: center;
+  margin-bottom: 72px;
   line-height: 1.11;
-  letter-spacing: 0.72px;
+  letter-spacing: 0.045em;
   text-transform: capitalize;
 }
+/* ================/Стилі для WHAT ARE YOU DOING==================== */
 
-/* Стилі для секції Team */
- .team{
+/* ================Стилі для TEAM==================== */
+
+.team {
   background-color: var(--secondary-white-color);
- }
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
 
- .team-list {
+.list-team-background {
   background-color: var(--primary-white-color);
- }
+  text-align: center;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
 
-/* Стилі для Footer */
+.inner {
+  margin-top: 32px;
+  margin-bottom: 32px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+/* ================/Стилі для TEAM==================== */
+
+/* ================Стилі для FOOTER==================== */
+
 .footer {
   background-color: var(--secondary-gray-color);
 }
- 
 
 .footer .logo-second-color {
   color: var(--secondary-white-color);
@@ -163,4 +230,57 @@ body {
 
 .footer-text {
   color: var(--secondary-white-color);
+  margin-top: 16px;
 }
+
+.footer-wrap {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+/* ================/Стилі для FOOTER==================== */
+
+/* ===================Стилі для PORTFOLIO ===================*/
+.filter-button {
+  background-color: var(--secondary-white-color);
+  padding: 12px 24px;
+  color: var(--primary-blue-color);
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  border: 1px solid #e7e9fc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.filter-list {
+  justify-content: center;
+  margin-bottom: 72px;
+  margin-top: 96px;
+}
+
+.list-title {
+  color: var(--secondary-gray-color);
+  font-size: 20px;
+  margin-bottom: 8px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+.list-portfolio {
+  flex-wrap: wrap;
+}
+
+.item-portfolio {
+  border: 1px solid #e7e9fc;
+}
+
+.list-text {
+  color: var(--primary-gray-color);
+  font-size: 16px;
+}
+
+.filter-button:hover,
+.filter-button:focus {
+  background-color: var(--primary-accent-color);
+  color: var(--primary-white-color);
+}
+/* ===================/Стилі для PORTFOLIO ===================*/
