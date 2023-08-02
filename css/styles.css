@@ -253,7 +253,7 @@ ol {
 }
 
 .inner {
-  padding: 32px 16px;
+  padding: 32px 0;
 }
 
 /* ================/Стилі для TEAM==================== */
@@ -329,6 +329,7 @@ ol {
 .inner-portfolio {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
+  border-top: none;
 }
 
 .list-text {
